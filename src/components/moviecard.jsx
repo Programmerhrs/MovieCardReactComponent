@@ -1,6 +1,7 @@
+import '../App.css';
 function MovieCard({ title, subtitle, description, image, rating }) {
   return (
-    <div className="h-[500px] bg-[#424242] shadow-md rounded-lg overflow-hidden max-w-xs flex flex-col items-center relative">
+    <div className="card h-[500px] bg-[#424242] shadow-md rounded-lg overflow-hidden max-w-xs flex flex-col items-center relative">
       <img src={image} alt={title} className=" h-64 object-contain pt-5 hover:scale-110 transition duration-200 hover:cursor-pointer"/>
       <div className="p-4">
         <h2 className="font-bold text-lg">{title}</h2>

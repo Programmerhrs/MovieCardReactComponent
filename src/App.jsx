@@ -26,13 +26,15 @@
 
   function App() {
     return (
-      <div className="min-h-fit bg-[#0a7fc2] p-12">
-        <div className="text-3xl font-bold mb-6 bg-black text-[#e1e1e1] h-14 flex items-center "><h1 className='m-auto'>React Movie Cards</h1></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className='w-full flex flex-col items-center h-full justify-center p-10'>
+        <div className="min-screen bg-[#0a7fc2] p-12 w-[80%]  flex items-center flex-col bg ">
+        <div className="text-3xl font-bold mb-6 bg-black text-[#e1e1e1] h-14 flex items-center w-full heading"><h1 className='m-auto'>React Movie Cards</h1></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 box place-items-center">
           {movies.map((movie, index) => (
             <MovieCard key={index} {...movie} />
           ))}
         </div>
+      </div>
       </div>
     );
   }
